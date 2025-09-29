@@ -1,0 +1,37 @@
+{
+  "name": "polybaseline",
+  "version": "1.0.0",
+  "description": "Polyfill generator for your projects based on the Web Platform Baseline data.",
+  "main": "dist/cli.js",
+  "scripts": {
+    "dev": "ts-node src/cli.ts",
+    "build": "tsc",
+    "generate:schema": "ts-node scripts/generateSchema.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noobyogi0010/polybaseline.git"
+  },
+  "keywords": [
+    "polyfill",
+    "polyfills",
+    "baseline",
+    "web-baseline",
+    "polyfil",
+    "generator"
+  ],
+  "author": "Yogesh Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noobyogi0010/polybaseline/issues"
+  },
+  "homepage": "https://github.com/noobyogi0010/polybaseline#readme",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "bin": {
+    "polybaseline": "bin/cli.js"
+  }
+}
