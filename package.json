@@ -4,7 +4,7 @@
   "description": "Polyfill generator for your projects based on the Web Platform Baseline data.",
   "main": "dist/cli.js",
   "scripts": {
-    "dev": "ts-node src/cli.ts",
+    "dev": "ts-node ./src/cli.ts",
     "build": "tsc",
     "generate:schema": "ts-node scripts/generateSchema.ts"
   },
@@ -30,6 +30,7 @@
     "@types/node": "^24.5.2",
     "cross-env": "^10.1.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.2"
   },
   "bin": {

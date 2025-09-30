@@ -29,23 +29,23 @@ const colors = {
   },
 };
 
-function logInfo(message: string) {
+export function info(message: string) {
   console.log(`${colors.fg.cyan}[INFO]${colors.reset} ${message}`);
 }
 
-function logSuccess(message: string) {
+export function success(message: string) {
   console.log(`${colors.fg.green}[SUCCESS]${colors.reset} ${message}`);
 }
 
-function logWarn(message: string) {
+export function warn(message: string) {
   console.warn(`${colors.fg.yellow}[WARN]${colors.reset} ${message}`);
 }
 
-function logError(message: string) {
+export function error(message: string) {
   console.error(`${colors.fg.red}[ERROR]${colors.reset} ${message}`);
 }
 
-function logDebug(message: string) {
+export function debug(message: string) {
   if (process.env.DEBUG) {
     console.log(`${colors.fg.magenta}[DEBUG]${colors.reset} ${message}`);
   }
