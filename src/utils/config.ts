@@ -12,7 +12,7 @@ type Config = {
   DEFAULT_DRY_RUN: boolean;
 };
 
-const config: Config = {
+export const config: Config = {
   DEBUG: process.env.DEBUG === "true" || process.env.DEBUG === "1",
 
   // External APIs
@@ -25,5 +25,3 @@ const config: Config = {
     (process.env.DEFAULT_GENERATE_MODE as "cdn" | "npm") || "cdn",
   DEFAULT_DRY_RUN: process.env.DEFAULT_DRY_RUN === "true" || false,
 };
-
-export default {config};
